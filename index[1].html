@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akhil Yasaswi | Internet Programming Portfolio</title>
+<style>
+:root{--navy:#12213a;--orange:#ff9d2e;--cream:#fff8ef;--ink:#253247;--muted:#64748b;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(120deg,#12213a,#253e61);color:white;padding:24px 7%}
+nav{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.1rem;letter-spacing:.4px}nav a{color:white;text-decoration:none;margin-left:16px;font-size:.95rem}
+.hero{padding:70px 7% 62px;background:linear-gradient(120deg,#12213a 0%,#263f63 65%,#ffad4d 160%);color:white}
+.eyebrow{color:#ffc477;text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:bold}
+h1{font-size:clamp(2.3rem,6vw,4.4rem);line-height:1.08;margin:12px 0}
+.hero p{max-width:650px;color:#e3eaf4;font-size:1.1rem}
+.btn{display:inline-block;margin:12px 10px 0 0;padding:12px 18px;border-radius:10px;background:var(--orange);color:#1d2b40;text-decoration:none;font-weight:bold;border:0;cursor:pointer}
+.btn.secondary{background:transparent;border:1px solid #d6dfeb;color:white}
+main{max-width:1100px;margin:auto;padding:28px 22px 70px}
+section{padding:30px 0}
+h2{font-size:1.8rem;margin:0 0 16px;color:var(--navy)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
+.card{background:white;border:1px solid #f0e5d7;border-radius:18px;padding:22px;box-shadow:0 8px 24px #2632470a}
+.card h3{margin:0 0 8px;color:var(--navy)}
+.tag{display:inline-block;background:#fff0dc;color:#9a5600;padding:5px 10px;border-radius:20px;font-size:.8rem;margin:3px 4px 3px 0}
+.muted{color:var(--muted)}
+.note{background:#fff0dc;border-left:4px solid var(--orange);padding:14px 16px;border-radius:8px}
+input,button{font:inherit}
+.taskrow{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+input[type=text]{flex:1;min-width:180px;padding:12px;border:1px solid #ccd4df;border-radius:9px}
+#taskList{padding-left:20px}#taskList li{margin:8px 0}
+.done{text-decoration:line-through;color:#758195}
+footer{text-align:center;background:#12213a;color:#e3eaf4;padding:24px}
+a{color:#b96a00}
+footer a{color:#ffc477}
+@media(max-width:600px){nav a{margin:0 10px 0 0}.hero{padding-top:50px}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">AKHIL YASASWI · PORTFOLIO</div>
+<div><a href="#about">About</a><a href="#certificate">Certificate</a><a href="#project">Project</a><a href="#contact">Contact</a></div>
+</nav>
+</header>
+
+<div class="hero">
+<div class="eyebrow">Student portfolio · CSE326</div>
+<h1>Learning the web.<br>Building useful things.</h1>
+<p>Hello! I’m Yenuganti Akhil Yasaswi. This website presents my web-development learning journey, course certificate, and a small interactive project created to practise Internet Programming concepts.</p>
+<a class="btn" href="#project">Explore my project</a>
+<a class="btn secondary" href="#certificate">View course details</a>
+</div>
+
+<main>
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>I am a student interested in web development and learning how websites are designed and built. I created this portfolio to organise my learning evidence and practise presenting a project online.</p>
+<span class="tag">Web development learner</span><span class="tag">Internet Programming</span><span class="tag">Student portfolio</span>
+</div>
+</section>
+
+<section id="certificate">
+<h2>Course Certificate</h2>
+<div class="card">
+<h3>Free Full Stack Developer Course</h3>
+<p class="muted">Platform: Simplilearn</p>
+<p><strong>Certificate date:</strong> 26 October 2026</p>
+<p><strong>Certificate code:</strong> 10946481</p>
+<p class="muted">The course certificate is evidence of course completion. It does not by itself mean that a separate CSE326 project has been approved.</p>
+<p>If you choose to publish the certificate PDF, upload it to this website folder as <code>certificate.pdf</code> and then uncomment the link below in index.html.</p>
+<!-- After adding certificate.pdf to this folder, remove the comment around this link:
+<a class="btn" href="certificate.pdf" target="_blank" rel="noopener">Open certificate PDF</a>
+-->
+</div>
+</section>
+
+<section id="project">
+<h2>Project: Student Task Planner</h2>
+<p class="muted">A small interactive web page made to practise HTML, CSS and JavaScript. Add tasks, mark them complete, or remove them.</p>
+<div class="card">
+<h3>My Study Task Planner</h3>
+<p>Try the working demo below.</p>
+<div class="taskrow">
+<input id="taskInput" type="text" placeholder="Type a task, e.g. Revise HTML forms" aria-label="New task">
+<button class="btn" id="addTask">Add task</button>
+</div>
+<ul id="taskList">
+<li>Practise HTML structure</li>
+<li>Review CSS styling</li>
+<li>Learn JavaScript events</li>
+</ul>
+<p class="muted">Tip: click a task to mark it complete. Use the Remove button to delete it.</p>
+</div>
+<div class="note" style="margin-top:16px">
+<strong>For your EDU-Revolution submission:</strong> describe what you built, what you learned, and how the website works. Only claim features you have tested and can explain to your faculty member.
+</div>
+</section>
+
+<section id="learning">
+<h2>What I’m Practising</h2>
+<div class="grid">
+<div class="card"><h3>HTML</h3><p class="muted">Organising page content with headings, sections, links and forms.</p></div>
+<div class="card"><h3>CSS</h3><p class="muted">Creating a responsive layout, readable typography and card-based design.</p></div>
+<div class="card"><h3>JavaScript</h3><p class="muted">Adding tasks and responding to user actions on the page.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Project Information</h2>
+<div class="card">
+<p><strong>Student:</strong> Yenuganti Akhil Yasaswi</p>
+<p><strong>Course mapping requested:</strong> CSE326 – Internet Programming</p>
+<p class="muted">Add your official student email or GitHub profile here only if you want it to be public.</p>
+</div>
+</section>
+</main>
+<footer>
+<p>Student learning portfolio · Built for practice</p>
+<p>Check the university's current EDU-Revolution criteria before submitting this website as project evidence.</p>
+</footer>
+
+<script>
+const input = document.getElementById('taskInput');
+const list = document.getElementById('taskList');
+function wireTask(li){
+  li.addEventListener('click', function(e){
+    if(e.target.tagName !== 'BUTTON') li.classList.toggle('done');
+  });
+  const remove = document.createElement('button');
+  remove.textContent = 'Remove';
+  remove.className = 'btn';
+  remove.style.marginLeft = '10px';
+  remove.style.padding = '5px 9px';
+  remove.addEventListener('click', function(e){
+    e.stopPropagation(); li.remove();
+  });
+  li.appendChild(remove);
+}
+Array.from(list.children).forEach(wireTask);
+document.getElementById('addTask').addEventListener('click', function(){
+  const value = input.value.trim();
+  if(!value){input.focus();return;}
+  const li = document.createElement('li');
+  li.appendChild(document.createTextNode(value));
+  list.appendChild(li);
+  wireTask(li);
+  input.value = '';
+  input.focus();
+});
+input.addEventListener('keydown', function(e){
+  if(e.key === 'Enter') document.getElementById('addTask').click();
+});
+</script>
+</body>
+</html>
